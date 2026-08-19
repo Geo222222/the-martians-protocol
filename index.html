@@ -6,14 +6,15 @@
   <meta name="theme-color" content="#050a10">
   <meta name="description" content="The Martians Protocol — cryptographic family enterprise, stewardship, and generational coordination infrastructure.">
   <title>The Martians Protocol — Genesis Terminal</title>
-  <link rel="icon" href="assets/martians-mark.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/brand/martians-mark.svg" type="image/svg+xml">
+  <link rel="preload" as="image" href="assets/hero/genesis-city.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <canvas id="starfield" aria-hidden="true"></canvas>
   <div class="scanlines" aria-hidden="true"></div>
   <header class="topbar">
-    <a class="brand" href="#terminal"><img src="assets/martians-mark.svg" alt=""><span><strong>THE MARTIANS</strong><small>PROTOCOL</small></span></a>
+    <a class="brand" href="#terminal"><img src="assets/brand/martians-mark.svg" alt="The Martians Protocol mark"><span><strong>THE MARTIANS</strong><small>PROTOCOL</small></span></a>
     <nav><a href="#protocol">Protocol</a><a href="#genesis">Genesis</a><a href="#architecture">Architecture</a><a href="#explorer">Explorer</a><a href="whitepaper/THE_MARTIANS_PROTOCOL.md">Whitepaper</a><a href="docs/ROADMAP.md">Roadmap</a></nav>
     <div class="status-chip"><i></i> ALPHA v0.1.0</div>
   </header>
@@ -29,7 +30,7 @@
         <div class="objective"><span>◈ OBJECTIVE</span><strong>Durable multi-generational wealth.</strong><small>Secondary objective: get filthy rich.</small></div>
       </div>
       <div class="hero-visual">
-        <img src="assets/genesis-hero.webp" alt="Futuristic Martians Protocol concept art">
+        <img src="assets/hero/genesis-city.png" width="1122" height="1402" alt="Hooded steward and wolf overlooking Genesis City on Mars beneath the Martians emblem">
         <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
         <div class="visual-tag tag-a">IDENTITY // PERMANENT</div><div class="visual-tag tag-b">LEGACY // 100+ YEARS</div>
       </div>
@@ -45,21 +46,54 @@
     <section id="protocol" class="section shell">
       <div class="section-head"><span>01 // PROTOCOL</span><h2>ONE PROTOCOL. MANY FAMILY NETWORKS.</h2><p>The family does not exist to create demand for a token. The protocol exists to strengthen the family institution.</p></div>
       <div class="module-grid">
-        <article class="module"><div class="glyph">◎</div><span>01</span><h3>IDENTITY</h3><p>Permanent Martian IDs that survive names, households, roles, and generations.</p><b>SPECIFIED</b></article>
-        <article class="module"><div class="glyph">⌬</div><span>02</span><h3>FAMILY GRAPH</h3><p>Attested relationships, membership classes, guardianship, disputes, and lineage.</p><b>SPECIFIED</b></article>
-        <article class="module active"><div class="glyph">◇</div><span>03</span><h3>CONTRIBUTION</h3><p>Verifiable records of labor, capital, ideas, mentorship, care, and stewardship.</p><b>BUILDING</b></article>
-        <article class="module"><div class="glyph">⌁</div><span>04</span><h3>AGREEMENTS</h3><p>Private documents with public-safe hashes, signatures, milestones, and state.</p><b>QUEUED</b></article>
-        <article class="module"><div class="glyph">△</div><span>05</span><h3>GOVERNANCE</h3><p>Scoped authority. Family votes cannot seize independently owned property.</p><b>QUEUED</b></article>
-        <article class="module"><div class="glyph">∞</div><span>06</span><h3>LEGACY</h3><p>Institutional memory that tells descendants what happened — and why.</p><b>SPECIFIED</b></article>
+        <article class="module has-art art-identity" data-status="specified">
+          <div class="module-art" aria-hidden="true"><img src="assets/identity/identity-fingerprint.png" width="1448" height="1086" alt="" loading="lazy" decoding="async"></div>
+          <div class="glyph">◎</div><span>01</span><h3>IDENTITY</h3>
+          <p>Permanent Martian IDs that survive names, households, roles, and generations.</p>
+          <b class="status specified">SPECIFIED</b>
+        </article>
+        <article class="module has-art art-enterprise" data-status="specified">
+          <div class="module-art" aria-hidden="true"><img src="assets/enterprise/enterprise-network.png" width="1448" height="1086" alt="" loading="lazy" decoding="async"></div>
+          <div class="glyph">⌬</div><span>02</span><h3>FAMILY GRAPH</h3>
+          <p>Attested relationships, membership classes, guardianship, disputes, and lineage.</p>
+          <b class="status specified">SPECIFIED</b>
+        </article>
+        <article class="module has-art art-contribution active" data-status="building">
+          <div class="module-art" aria-hidden="true"><img src="assets/contribution/contribution-nexus.png" width="1448" height="1086" alt="" loading="lazy" decoding="async"></div>
+          <div class="glyph">◇</div><span>03</span><h3>CONTRIBUTION</h3>
+          <p>Verifiable records of labor, capital, ideas, mentorship, care, and stewardship.</p>
+          <b class="status building">BUILDING</b>
+        </article>
+        <article class="module" data-status="queued">
+          <div class="glyph">⌁</div><span>04</span><h3>AGREEMENTS</h3>
+          <p>Private documents with public-safe hashes, signatures, milestones, and state.</p>
+          <b class="status queued">QUEUED</b>
+        </article>
+        <article class="module has-art art-governance" data-status="queued">
+          <div class="module-art" aria-hidden="true"><img src="assets/governance/governance-council.png" width="1448" height="1086" alt="" loading="lazy" decoding="async"></div>
+          <div class="glyph">△</div><span>05</span><h3>GOVERNANCE</h3>
+          <p>Scoped authority. Family votes cannot seize independently owned property.</p>
+          <b class="status queued">QUEUED</b>
+        </article>
+        <article class="module has-art art-legacy" data-status="specified">
+          <div class="module-art" aria-hidden="true"><img src="assets/legacy/generational-archive.png" width="1448" height="1086" alt="" loading="lazy" decoding="async"></div>
+          <div class="glyph">∞</div><span>06</span><h3>LEGACY</h3>
+          <p>Institutional memory that tells descendants what happened — and why.</p>
+          <b class="status specified">SPECIFIED</b>
+        </article>
       </div>
     </section>
 
     <section id="genesis" class="section shell split">
-      <div class="panel genesis-card"><div class="panel-title">// GENESIS NETWORK</div><div class="genesis-core"><img src="assets/martians-mark.svg" alt="Martians mark"><div><span>0001</span><h2>MARTIN × WILLIAMS</h2><p>Lineage · Enterprise · Stewardship · Legacy</p><b>● ACTIVE</b></div></div><blockquote>“What we build today should still serve the family in 100 years.”</blockquote></div>
-      <div class="panel constellation"><div class="panel-title">// FAMILY CONSTELLATION <span>PUBLIC-SAFE VIEW</span></div><div class="network-map"><div class="node core">MW<small>0001</small></div><div class="node n1">MID<small>IDENTITY</small></div><div class="node n2">SS<small>ENTERPRISE</small></div><div class="node n3">GT<small>ENTERPRISE</small></div><div class="node n4">∞<small>FUTURE</small></div><svg viewBox="0 0 600 320" preserveAspectRatio="none"><line x1="300" y1="160" x2="110" y2="80"/><line x1="300" y1="160" x2="490" y2="70"/><line x1="300" y1="160" x2="120" y2="260"/><line x1="300" y1="160" x2="500" y2="250"/></svg></div></div>
+      <div class="panel genesis-card"><div class="panel-title">// GENESIS NETWORK</div><div class="genesis-core"><img src="assets/brand/martians-mark.svg" alt="The Martians Protocol mark"><div><span>0001</span><h2>MARTIN × WILLIAMS</h2><p>Lineage · Enterprise · Stewardship · Legacy</p><b>● ACTIVE</b></div></div><blockquote>“What we build today should still serve the family in 100 years.”</blockquote></div>
+      <div class="panel constellation">
+        <div class="panel-art" aria-hidden="true"><img src="assets/enterprise/enterprise-network.png" width="1448" height="1086" alt="" loading="lazy" decoding="async"></div>
+        <div class="panel-title">// FAMILY CONSTELLATION <span>PUBLIC-SAFE VIEW</span></div>
+        <div class="network-map"><div class="node core">MW<small>0001</small></div><div class="node n1">MID<small>IDENTITY</small></div><div class="node n2">SS<small>ENTERPRISE</small></div><div class="node n3">GT<small>ENTERPRISE</small></div><div class="node n4">∞<small>FUTURE</small></div><svg viewBox="0 0 600 320" preserveAspectRatio="none" aria-hidden="true"><line x1="300" y1="160" x2="110" y2="80"/><line x1="300" y1="160" x2="490" y2="70"/><line x1="300" y1="160" x2="120" y2="260"/><line x1="300" y1="160" x2="500" y2="250"/></svg></div>
+      </div>
     </section>
 
-    <section id="architecture" class="section shell"><div class="section-head"><span>02 // ARCHITECTURE</span><h2>SEPARATE THE PRIMITIVES.</h2><p>Identity ≠ kinship ≠ contribution ≠ reputation ≠ ownership ≠ authority ≠ MARS.</p></div><div class="stack"><div><b>MARTIAN ID</b><span>Who are you?</span></div><div><b>FAMILY GRAPH</b><span>How are you connected?</span></div><div><b>CONTRIBUTION</b><span>What did you do?</span></div><div><b>STEWARDSHIP</b><span>How have you served?</span></div><div><b>OWNERSHIP</b><span>What legally belongs to you?</span></div><div><b>AUTHORITY</b><span>What may you decide?</span></div><div class="mars"><b>MARS</b><span>What protocol economic capacity can you deploy?</span></div></div></section>
+    <section id="architecture" class="section shell"><div class="section-head"><span>02 // ARCHITECTURE</span><h2>SEPARATE THE PRIMITIVES.</h2><p>Identity ≠ kinship ≠ contribution ≠ reputation ≠ ownership ≠ authority ≠ MARS.</p></div><div class="stack"><div><b>MARTIAN ID</b><span>Who are you?</span></div><div><b>FAMILY GRAPH</b><span>How are you connected?</span></div><div><b>CONTRIBUTION</b><span>What did you do?</span></div><div><b>STEWARDSHIP</b><span>How have you served?</span></div><div><b>OWNERSHIP</b><span>What legally belongs to you?</span></div><div><b>AUTHORITY</b><span>What may you decide?</span></div><div class="mars"><b>MARS</b><small class="status deferred">ISSUANCE DEFERRED</small><span>What protocol economic capacity can you deploy?</span></div></div></section>
 
     <section id="explorer" class="section shell split explorer-wrap"><div class="panel"><div class="panel-title">// PROTOCOL EXPLORER <span>SIMULATED ALPHA FEED</span></div><div id="eventFeed" class="event-feed"></div></div><div class="panel terminal-box"><div class="panel-title">// DEVELOPER TERMINAL</div><pre><span>$</span> martians status
 network: 0001
