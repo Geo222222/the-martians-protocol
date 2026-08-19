@@ -3,123 +3,165 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#050a10">
+  <meta name="theme-color" content="#050814">
   <meta name="description" content="The Martians Protocol — cryptographic family enterprise, stewardship, and generational coordination infrastructure.">
   <title>The Martians Protocol — Genesis Terminal</title>
   <link rel="icon" href="assets/brand/martians-mark.svg" type="image/svg+xml">
-  <link rel="preload" as="image" href="assets/hero/genesis-city.png">
+  <link rel="preload" as="image" href="assets/hero/wolf-watch.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <canvas id="starfield" aria-hidden="true"></canvas>
   <div class="scanlines" aria-hidden="true"></div>
+
   <header class="topbar">
-    <a class="brand" href="#terminal"><img src="assets/brand/martians-mark.svg" alt="The Martians Protocol mark"><span><strong>THE MARTIANS</strong><small>PROTOCOL</small></span></a>
-    <nav><a href="#protocol">Protocol</a><a href="#genesis">Genesis</a><a href="#architecture">Architecture</a><a href="#explorer">Explorer</a><a href="whitepaper/THE_MARTIANS_PROTOCOL.md">Whitepaper</a><a href="docs/ROADMAP.md">Roadmap</a></nav>
-    <div class="status-chip"><i></i> ALPHA v0.1.0</div>
+    <a class="brand" href="#board"><img src="assets/brand/martians-mark.svg" alt="The Martians Protocol mark"><span><strong>THE MARTIANS</strong><small>PROTOCOL</small></span></a>
+    <nav>
+      <a href="#board">Home</a>
+      <a href="#protocol">Protocol</a>
+      <a href="#genesis">Genesis</a>
+      <a href="#explorer">Explorer</a>
+      <a href="whitepaper/THE_MARTIANS_PROTOCOL.md">Whitepaper</a>
+      <a href="docs/ROADMAP.md">Roadmap</a>
+      <a href="#developers">Developers</a>
+    </nav>
+    <button class="enter" data-open="protocol">ENTER TERMINAL →</button>
   </header>
-  <div class="command-rail" aria-hidden="true"><span>OBS.LINK NOMINAL</span><span>GENESIS 0001</span><span>CHAIN TESTNET / PENDING</span><span>MARS LAYER LOCKED</span><span>ALPHA BUILD 28%</span></div>
 
-  <main>
-    <section id="terminal" class="hero command-stage">
-      <div class="hero-visual">
-        <img src="assets/hero/genesis-city.png" width="1122" height="1402" alt="Hooded steward and wolf overlooking Genesis City on Mars beneath the Martians emblem">
-        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
-        <div class="visual-tag tag-a">IDENTITY // PERMANENT</div><div class="visual-tag tag-b">LEGACY // 100+ YEARS</div>
-        <div class="hero-readout">STEWARD VIEW // CITY SPINE // MARK 0001</div>
-      </div>
-      <div class="hero-hud shell">
-        <div class="hero-copy">
-          <div class="eyebrow"><span>GENESIS TRANSMISSION</span><b>NETWORK 0001</b></div>
-          <h1>FAMILY WAS THE<br>FIRST NETWORK.<br><em>WE'RE GIVING IT<br>INFRASTRUCTURE.</em></h1>
-          <p class="lede">A cryptographic family enterprise, stewardship, and generational coordination protocol built to preserve identity, contribution, authority, agreements, knowledge, and legacy across generations.</p>
-          <div class="primitive-row"><span>IDENTITY</span><span>ENTERPRISE</span><span>CONTRIBUTION</span><span>GOVERNANCE</span><span>LEGACY</span></div>
-          <div class="actions"><button class="primary" data-open="protocol">ENTER PROTOCOL TERMINAL <b>→</b></button><a class="secondary" href="whitepaper/THE_MARTIANS_PROTOCOL.md">READ WHITEPAPER</a></div>
-          <div class="objective"><span>◈ OBJECTIVE</span><strong>Durable multi-generational wealth.</strong><small>Secondary objective: get filthy rich.</small></div>
+  <main id="board" class="board">
+    <section class="cell hero" id="terminal">
+      <img class="hero-art" src="assets/hero/wolf-watch.png" width="1920" height="1080" alt="Wolf, hooded steward, and Genesis City beneath Mars">
+      <div class="hero-shade"></div>
+      <div class="hero-copy">
+        <p class="kicker">GENESIS COMMAND</p>
+        <h1>THE MARTIANS<br>PROTOCOL</h1>
+        <p class="lede">A cryptographic family enterprise, stewardship, and generational coordination protocol.</p>
+        <blockquote class="quote-a"><p>Family was the first network. We’re giving it infrastructure.</p><cite>— The Martians</cite></blockquote>
+        <div class="hero-actions">
+          <button class="primary" data-open="protocol">ENTER PROTOCOL</button>
+          <a class="ghost" href="whitepaper/THE_MARTIANS_PROTOCOL.md">READ WHITEPAPER</a>
         </div>
-        <aside class="telemetry panel">
-          <div class="panel-title">// PROTOCOL STATUS <span class="live">● LIVE BUILD</span></div>
-          <dl><dt>VERSION</dt><dd>v0.1.0-alpha</dd><dt>GENESIS</dt><dd>0001</dd><dt>CHAIN</dt><dd>TESTNET / PENDING</dd><dt>NETWORKS</dt><dd>1</dd><dt>IDENTITIES</dt><dd>7</dd><dt>ENTERPRISES</dt><dd>2</dd></dl>
-          <div class="progress-label"><span>BUILD PROGRESS</span><b>28%</b></div><div class="progress"><i></i></div>
-        </aside>
+      </div>
+      <blockquote class="quote-b"><p>I go out in the morning and devour the prey. At night, I split the spoil with the family.</p><cite>A Benjamite · The Wolf</cite></blockquote>
+    </section>
+
+    <aside class="cell status">
+      <div class="cell-head"><span>PROTOCOL STATUS</span><b class="live">● ALPHA v0.1.0</b></div>
+      <dl>
+        <dt>Genesis Network</dt><dd>0001</dd>
+        <dt>Identities</dt><dd>7</dd>
+        <dt>Enterprises</dt><dd>2</dd>
+        <dt>Attestations</dt><dd>0</dd>
+        <dt>Agreements</dt><dd>0</dd>
+        <dt>Contracts</dt><dd>0</dd>
+        <dt>Chain</dt><dd>Testnet / Pending</dd>
+      </dl>
+      <a class="cell-link" href="#explorer">LIVE BUILD STATUS →</a>
+    </aside>
+
+    <section class="cell genesis" id="genesis">
+      <div class="cell-head"><span>GENESIS NETWORK 0001 · MARTIN × WILLIAMS</span><b class="live">ACTIVE</b></div>
+      <div class="web">
+        <img class="web-art" src="assets/enterprise/enterprise-network.png" alt="" width="1448" height="1086">
+        <img class="web-core" src="assets/brand/martians-mark.svg" alt="Martians mark">
+        <span class="web-node n1">Djuvane</span>
+        <span class="web-node n2">SalonSignal</span>
+        <span class="web-node n3">Sheryl Williams</span>
+        <span class="web-node n4">GetTwisted</span>
+        <span class="web-node n5">Family</span>
+      </div>
+      <a class="cell-link" href="#protocol">VIEW NETWORK →</a>
+    </section>
+
+    <section class="cell layers" id="protocol">
+      <div class="cell-head"><span>THE PROTOCOL LAYERS</span></div>
+      <ol class="layer-list">
+        <li data-status="specified"><i></i><div><b>Identity &amp; Membership</b><small>Permanent Martian IDs</small></div><em>Specified</em></li>
+        <li data-status="specified"><i></i><div><b>Enterprise Layer</b><small>Ownership and family graph</small></div><em>Specified</em></li>
+        <li data-status="building"><i></i><div><b>Contribution Ledger</b><small>Attested labor and stewardship</small></div><em>Building</em></li>
+        <li data-status="queued"><i></i><div><b>Agreement Protocol</b><small>Private docs, public-safe hashes</small></div><em>Queued</em></li>
+        <li data-status="queued"><i></i><div><b>Governance Engine</b><small>Scoped authority only</small></div><em>Queued</em></li>
+        <li data-status="deferred"><i></i><div><b>MARS Economic Layer</b><small>Issuance remains locked</small></div><em>Deferred</em></li>
+      </ol>
+    </section>
+
+    <section class="cell mission">
+      <img src="assets/mission/earth-nexus.png" alt="" width="1448" height="1086">
+      <div class="mission-copy">
+        <div class="cell-head"><span>MISSION</span></div>
+        <p>To enable families to operate as durable multi-generational institutions by cryptographically preserving what matters.</p>
+        <div class="steps"><span>BUILD</span><span>GROW</span><span>SECURE</span><span>REPEAT</span></div>
+        <div class="mission-stats"><div><b>7</b><small>GENS GOAL</small></div><div><b>100+</b><small>YEARS ARCHIVE</small></div><div><b>∞</b><small>LEGACY</small></div></div>
       </div>
     </section>
 
-    <section class="metric-strip shell"><div><small>GENESIS NETWORK</small><b>0001</b></div><div><small>PROTOCOL VERSION</small><b>α 0.1.0</b></div><div><small>IDENTITIES</small><b>07</b></div><div><small>ENTERPRISES</small><b>02</b></div><div><small>ATTESTATIONS</small><b>00</b></div><div><small>STATUS</small><b class="green">ACTIVE</b></div></section>
+    <section class="cell activity" id="explorer">
+      <div class="cell-head"><span>RECENT ACTIVITY</span><small>SIMULATED ALPHA FEED</small></div>
+      <div id="eventFeed" class="event-feed"></div>
+    </section>
 
-    <section id="protocol" class="section shell">
-      <div class="section-head"><span>01 // PROTOCOL</span><h2>ONE PROTOCOL. MANY FAMILY NETWORKS.</h2><p>The family does not exist to create demand for a token. The protocol exists to strengthen the family institution.</p></div>
-      <div class="module-grid">
-        <article class="module has-art art-identity" data-status="specified">
-          <div class="module-art" aria-hidden="true"><img src="assets/identity/identity-fingerprint.png" width="1448" height="1086" alt="" loading="lazy" decoding="async"></div>
-          <div class="glyph">◎</div><span>01</span><h3>IDENTITY</h3>
-          <p>Permanent Martian IDs that survive names, households, roles, and generations.</p>
-          <b class="status specified">SPECIFIED</b>
-        </article>
-        <article class="module has-art art-enterprise" data-status="specified">
-          <div class="module-art" aria-hidden="true"><img src="assets/enterprise/enterprise-network.png" width="1448" height="1086" alt="" loading="lazy" decoding="async"></div>
-          <div class="glyph">⌬</div><span>02</span><h3>FAMILY GRAPH</h3>
-          <p>Attested relationships, membership classes, guardianship, disputes, and lineage.</p>
-          <b class="status specified">SPECIFIED</b>
-        </article>
-        <article class="module has-art art-contribution active" data-status="building">
-          <div class="module-art" aria-hidden="true"><img src="assets/contribution/contribution-nexus.png" width="1448" height="1086" alt="" loading="lazy" decoding="async"></div>
-          <div class="glyph">◇</div><span>03</span><h3>CONTRIBUTION</h3>
-          <p>Verifiable records of labor, capital, ideas, mentorship, care, and stewardship.</p>
-          <b class="status building">BUILDING</b>
-        </article>
-        <article class="module" data-status="queued">
-          <div class="glyph">⌁</div><span>04</span><h3>AGREEMENTS</h3>
-          <p>Private documents with public-safe hashes, signatures, milestones, and state.</p>
-          <b class="status queued">QUEUED</b>
-        </article>
-        <article class="module has-art art-governance" data-status="queued">
-          <div class="module-art" aria-hidden="true"><img src="assets/governance/governance-council.png" width="1448" height="1086" alt="" loading="lazy" decoding="async"></div>
-          <div class="glyph">△</div><span>05</span><h3>GOVERNANCE</h3>
-          <p>Scoped authority. Family votes cannot seize independently owned property.</p>
-          <b class="status queued">QUEUED</b>
-        </article>
-        <article class="module has-art art-legacy" data-status="specified">
-          <div class="module-art" aria-hidden="true"><img src="assets/legacy/generational-archive.png" width="1448" height="1086" alt="" loading="lazy" decoding="async"></div>
-          <div class="glyph">∞</div><span>06</span><h3>LEGACY</h3>
-          <p>Institutional memory that tells descendants what happened — and why.</p>
-          <b class="status specified">SPECIFIED</b>
-        </article>
+    <section class="cell intro">
+      <img src="assets/landscape/martian-frontier.png" alt="Hooded steward overlooking a Martian dome colony and rover" width="1920" height="1080">
+      <div class="intro-copy">
+        <h2>BUILDING TODAY.<br>FOR GENERATIONS.</h2>
+        <button class="play" data-open="intro" aria-label="Play intro"><i></i> PLAY INTRO</button>
       </div>
     </section>
 
-    <section id="genesis" class="section shell split">
-      <div class="panel genesis-card"><div class="panel-title">// GENESIS NETWORK</div><div class="genesis-core"><img src="assets/brand/martians-mark.svg" alt="The Martians Protocol mark"><div><span>0001</span><h2>MARTIN × WILLIAMS</h2><p>Lineage · Enterprise · Stewardship · Legacy</p><b>● ACTIVE</b></div></div><blockquote>“What we build today should still serve the family in 100 years.”</blockquote></div>
-      <div class="panel constellation">
-        <div class="panel-art" aria-hidden="true"><img src="assets/enterprise/enterprise-network.png" width="1448" height="1086" alt="" loading="lazy" decoding="async"></div>
-        <div class="panel-title">// FAMILY CONSTELLATION <span>PUBLIC-SAFE VIEW</span></div>
-        <div class="network-map"><div class="node core">MW<small>0001</small></div><div class="node n1">MID<small>IDENTITY</small></div><div class="node n2">SS<small>ENTERPRISE</small></div><div class="node n3">GT<small>ENTERPRISE</small></div><div class="node n4">∞<small>FUTURE</small></div><svg viewBox="0 0 600 320" preserveAspectRatio="none" aria-hidden="true"><line x1="300" y1="160" x2="110" y2="80"/><line x1="300" y1="160" x2="490" y2="70"/><line x1="300" y1="160" x2="120" y2="260"/><line x1="300" y1="160" x2="500" y2="250"/></svg></div>
-      </div>
+    <section class="cell developers" id="developers">
+      <div class="cell-head"><span>DEVELOPER TERMINAL</span></div>
+      <ul class="dev-list">
+        <li><a href="architecture/SYSTEM_ARCHITECTURE.md"><b>API / Architecture</b><small>Specified</small></a></li>
+        <li><a href="specs/IDENTITY_AND_MEMBERSHIP.md"><b>Schemas</b><small>Specified</small></a></li>
+        <li><span><b>SDK</b><small>Queued</small></span></li>
+        <li><a href="https://github.com/Geo222222/the-martians-protocol"><b>GitHub</b><small>Public</small></a></li>
+        <li><span><b>Testnet</b><small>Pending</small></span></li>
+      </ul>
+      <button class="cell-link as-button" data-open="protocol">OPEN TERMINAL →</button>
     </section>
-
-    <section id="architecture" class="section shell"><div class="section-head"><span>02 // ARCHITECTURE</span><h2>SEPARATE THE PRIMITIVES.</h2><p>Identity ≠ kinship ≠ contribution ≠ reputation ≠ ownership ≠ authority ≠ MARS.</p></div><div class="stack"><div><b>MARTIAN ID</b><span>Who are you?</span></div><div><b>FAMILY GRAPH</b><span>How are you connected?</span></div><div><b>CONTRIBUTION</b><span>What did you do?</span></div><div><b>STEWARDSHIP</b><span>How have you served?</span></div><div><b>OWNERSHIP</b><span>What legally belongs to you?</span></div><div><b>AUTHORITY</b><span>What may you decide?</span></div><div class="mars"><b>MARS</b><small class="status deferred">ISSUANCE DEFERRED</small><span>What protocol economic capacity can you deploy?</span></div></div></section>
-
-    <section id="explorer" class="section shell split explorer-wrap"><div class="panel"><div class="panel-title">// PROTOCOL EXPLORER <span>SIMULATED ALPHA FEED</span></div><div id="eventFeed" class="event-feed"></div></div><div class="panel terminal-box"><div class="panel-title">// DEVELOPER TERMINAL</div><pre><span>$</span> martians status
-network: 0001
-environment: alpha
-identity_registry: specified
-family_graph: specified
-contribution_ledger: building
-agreement_protocol: queued
-governance_engine: queued
-mars_economic_layer: deferred
-
-<span>$</span> martians invariant check
-✓ history cannot be silently erased
-✓ token cannot purchase kinship
-✓ contribution does not create ownership
-✓ private records remain private</pre><a href="architecture/SYSTEM_ARCHITECTURE.md">OPEN ARCHITECTURE →</a></div></section>
-
-    <section class="manifesto shell"><div class="wolf-mark">M</div><p>BUILT FOR GENERATIONS.<br><strong>NOT FOR THE MOMENT.</strong></p><span>Steward · Build · Protect · Multiply · Leave a Legacy</span></section>
   </main>
 
-  <footer class="shell"><span>THE MARTIANS PROTOCOL // GENESIS 0001</span><span>© 2026 · BUILT IN PUBLIC</span><a href="https://github.com/Geo222222/the-martians-protocol">GITHUB ↗</a></footer>
-  <div id="protocolModal" class="modal" aria-hidden="true"><div class="modal-card"><button class="close" aria-label="Close">×</button><small>GENESIS TERMINAL</small><h2>PROTOCOL ACCESS</h2><p>The public terminal currently exposes specification state only. Executable protocol capabilities will activate as they pass Alpha certification.</p><div class="modal-actions"><a href="#protocol">EXPLORE SPECIFICATION</a><a href="docs/ROADMAP.md">VIEW 6-DAY BUILD</a></div></div></div>
+  <footer class="foot">
+    <div class="foot-brand">
+      <img src="assets/brand/martians-mark.svg" alt="">
+      <div>
+        <strong>THE MARTIANS PROTOCOL</strong>
+        <p>Objective: durable multi-generational wealth.<br>Secondary objective: get filthy rich.</p>
+      </div>
+    </div>
+    <div class="social">
+      <a href="https://github.com/Geo222222/the-martians-protocol" aria-label="GitHub">GitHub</a>
+    </div>
+    <div class="thumbs">
+      <img src="assets/brand/martians-mark.svg" alt="Protocol mark">
+      <img src="assets/brand/wolf-portrait.png" alt="Wolf mark">
+      <img src="assets/landscape/martian-frontier.png" alt="Martian frontier">
+      <img src="assets/brand/ark-ship.png" alt="Ark ship">
+      <img src="assets/hero/genesis-city.png" alt="Genesis City">
+      <img src="assets/brand/mars-coin.png" alt="Protocol coin">
+    </div>
+  </footer>
+
+  <div id="protocolModal" class="modal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="close" aria-label="Close">×</button>
+      <small>GENESIS TERMINAL</small>
+      <h2>PROTOCOL ACCESS</h2>
+      <p>The public terminal currently exposes specification state only. Executable protocol capabilities will activate as they pass Alpha certification.</p>
+      <div class="modal-actions">
+        <a href="#protocol">EXPLORE SPECIFICATION</a>
+        <a href="docs/ROADMAP.md">VIEW 6-DAY BUILD</a>
+      </div>
+    </div>
+  </div>
+  <div id="introModal" class="modal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="close" aria-label="Close">×</button>
+      <small>GENESIS CINEMA</small>
+      <h2>INTRO QUEUED</h2>
+      <p>The cinematic intro is specified for later Alpha drops. This still is the frontier record, not a live playback feed.</p>
+    </div>
+  </div>
   <script src="app.js"></script>
 </body>
 </html>
