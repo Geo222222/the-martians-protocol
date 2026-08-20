@@ -25,6 +25,42 @@ An Enterprise Node should support at least:
 - status; and
 - evidence references.
 
+## Enterprise-to-enterprise relationships
+
+The protocol should be able to record relationships between organizations without confusing those relationships with legal ownership.
+
+Initial relationship types may include:
+
+- `CREATED_BY`
+- `ORIGINATED_BY`
+- `PARENT_OF`
+- `SUBSIDIARY_OF`
+- `SERVICE_PROVIDER_TO`
+- `CUSTOMER_OF`
+- `DESIGN_PARTNER_OF`
+- `AFFILIATED_WITH`
+
+Each relationship record should include:
+
+- source enterprise;
+- target enterprise;
+- relationship type;
+- effective date;
+- attestor(s);
+- evidence reference where appropriate;
+- verification status; and
+- optional legal-status qualifier.
+
+A `CREATED_BY` or `ORIGINATED_BY` relationship does **not** prove parent/subsidiary ownership. A `PARENT_OF` or `SUBSIDIARY_OF` assertion should require stronger evidence tied to controlling legal documents.
+
+### Genesis example
+
+Genesis Network 0001 currently uses the operating assertion:
+
+- `SalonSignal ORIGINATED_BY CodeReign`
+
+This records the family-enterprise operating relationship while leaving exact legal parentage, equity, capitalization, and tax treatment to formation documents and applicable law.
+
 ## Ownership rule
 
 The initial protocol records ownership; it does not create ownership.
@@ -51,3 +87,5 @@ No generic token balance may be interpreted as legal ownership merely because it
 ## Authority boundaries
 
 Enterprise governance is scoped to the enterprise. Family governance does not automatically grant operational or ownership authority over an enterprise. Enterprise owners and authorized managers retain their legally and contractually defined authority.
+
+Shared family capabilities—technology, business intelligence, marketing, education, or security/resilience—must be represented as scoped roles or service relationships rather than implied ownership.
