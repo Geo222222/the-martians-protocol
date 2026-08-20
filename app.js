@@ -22,9 +22,13 @@ const events=[
   ['00:00:01','Genesis Network 0001 initialized','VERIFIED'],
   ['00:00:04','Protocol invariants published','VERIFIED'],
   ['00:00:07','Identity specification registered','SPECIFIED'],
-  ['00:00:12','Family Graph specification registered','SPECIFIED'],
-  ['00:00:18','Contribution Ledger entered build phase','BUILDING'],
-  ['00:00:24','MARS issuance gate remains locked','DEFERRED']
+  ['00:00:10','GetTwisted ownership reference registered','SPECIFIED'],
+  ['00:00:12','Hair Replacement ownership reference registered','SPECIFIED'],
+  ['00:00:14','CodeReign enterprise node registered','SPECIFIED'],
+  ['00:00:16','SalonSignal ORIGINATED_BY CodeReign modeled','SPECIFIED'],
+  ['00:00:18','Security & Resilience authority model specified','SPECIFIED'],
+  ['00:00:22','Contribution Ledger entered build phase','BUILDING'],
+  ['00:00:26','MARS issuance gate remains locked','DEFERRED']
 ];
 document.getElementById('eventFeed').innerHTML=events.map(e=>`<div class="event"><time>${e[0]}</time><b>${e[1]}</b><span class="status ${e[2].toLowerCase()}">${e[2]}</span></div>`).join('');
 
