@@ -8,7 +8,7 @@
   <title>The Martians Protocol — Genesis Terminal</title>
   <link rel="icon" href="assets/brand/martians-mark.svg" type="image/svg+xml">
   <link rel="preload" as="image" href="assets/hero/wolf-watch.png">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20260819-enterprise2">
 </head>
 <body>
   <canvas id="starfield" aria-hidden="true"></canvas>
@@ -42,42 +42,44 @@
           <a class="ghost" href="whitepaper/THE_MARTIANS_PROTOCOL.md">READ WHITEPAPER</a>
         </div>
       </div>
-      <blockquote class="quote-b"><p>I go out in the morning and devour the prey. At night, I split the spoil with the family.</p><cite>A Benjamite · The Wolf</cite></blockquote>
+      <blockquote class="quote-b"><p>Build the asset. Preserve the authority. Pass the knowledge forward.</p><cite>Genesis Network 0001</cite></blockquote>
     </section>
 
     <aside class="cell status">
-      <div class="cell-head"><span>PROTOCOL STATUS</span><b class="live">● ALPHA v0.1.0</b></div>
+      <div class="cell-head"><span>PROTOCOL STATUS</span><b class="live">● ALPHA v0.1.1</b></div>
       <dl>
         <dt>Genesis Network</dt><dd>0001</dd>
-        <dt>Identities</dt><dd>7</dd>
-        <dt>Enterprises</dt><dd>2</dd>
+        <dt>Operating Identities</dt><dd>8</dd>
+        <dt>Enterprise Nodes</dt><dd>4</dd>
+        <dt>Enterprise Links</dt><dd>1+</dd>
+        <dt>Security Roles</dt><dd>1 proposed</dd>
         <dt>Attestations</dt><dd>0</dd>
-        <dt>Agreements</dt><dd>0</dd>
-        <dt>Contracts</dt><dd>0</dd>
         <dt>Chain</dt><dd>Testnet / Pending</dd>
       </dl>
       <a class="cell-link" href="#explorer">LIVE BUILD STATUS →</a>
     </aside>
 
     <section class="cell genesis" id="genesis">
-      <div class="cell-head"><span>GENESIS NETWORK 0001 · MARTIN × WILLIAMS</span><b class="live">ACTIVE</b></div>
+      <div class="cell-head"><span>GENESIS NETWORK 0001 · MARTIN × WILLIAMS</span><b class="live">REFERENCE GRAPH</b></div>
       <div class="web">
         <img class="web-art" src="assets/enterprise/enterprise-network.png" alt="" width="1448" height="1086">
         <img class="web-core" src="assets/brand/martians-mark.svg" alt="Martians mark">
         <span class="web-node n1">Djuvane</span>
-        <span class="web-node n2">SalonSignal</span>
-        <span class="web-node n3">Sheryl Williams</span>
-        <span class="web-node n4">GetTwisted</span>
-        <span class="web-node n5">Family</span>
+        <span class="web-node n2">CodeReign → SalonSignal</span>
+        <span class="web-node n3">Sheryl · Hair Replacement</span>
+        <span class="web-node n4">GetTwisted · Sheryl + Michael</span>
+        <span class="web-node n5">Taheem · Security &amp; Resilience</span>
       </div>
+      <p class="network-note">Reference attestations distinguish ownership, organization origin, operating roles, and shared capability. The protocol records these claims; it does not create the underlying legal rights.</p>
       <a class="cell-link" href="#protocol">VIEW NETWORK →</a>
     </section>
 
     <section class="cell layers" id="protocol">
       <div class="cell-head"><span>THE PROTOCOL LAYERS</span></div>
       <ol class="layer-list">
-        <li data-status="specified"><i></i><div><b>Identity &amp; Membership</b><small>Permanent Martian IDs</small></div><em>Specified</em></li>
-        <li data-status="specified"><i></i><div><b>Enterprise Layer</b><small>Ownership and family graph</small></div><em>Specified</em></li>
+        <li data-status="specified"><i></i><div><b>Identity &amp; Membership</b><small>Persistent family-network identities</small></div><em>Specified</em></li>
+        <li data-status="specified"><i></i><div><b>Enterprise Layer</b><small>Ownership + organization relationships</small></div><em>Specified</em></li>
+        <li data-status="specified"><i></i><div><b>Scoped Authority</b><small>Roles, security, resilience, delegated capability</small></div><em>Specified</em></li>
         <li data-status="building"><i></i><div><b>Contribution Ledger</b><small>Attested labor and stewardship</small></div><em>Building</em></li>
         <li data-status="queued"><i></i><div><b>Agreement Protocol</b><small>Private docs, public-safe hashes</small></div><em>Queued</em></li>
         <li data-status="queued"><i></i><div><b>Governance Engine</b><small>Scoped authority only</small></div><em>Queued</em></li>
@@ -89,9 +91,9 @@
       <img src="assets/mission/earth-nexus.png" alt="" width="1448" height="1086">
       <div class="mission-copy">
         <div class="cell-head"><span>MISSION</span></div>
-        <p>To enable families to operate as durable multi-generational institutions by cryptographically preserving what matters.</p>
+        <p>To enable families to operate as durable multi-generational institutions by cryptographically preserving identity, enterprise relationships, contribution, authority, security responsibility, agreements, and succession.</p>
         <div class="steps"><span>BUILD</span><span>GROW</span><span>SECURE</span><span>REPEAT</span></div>
-        <div class="mission-stats"><div><b>7</b><small>GENS GOAL</small></div><div><b>100+</b><small>YEARS ARCHIVE</small></div><div><b>∞</b><small>LEGACY</small></div></div>
+        <div class="mission-stats"><div><b>8</b><small>OPERATING IDS</small></div><div><b>4</b><small>ENTERPRISE NODES</small></div><div><b>∞</b><small>LEGACY</small></div></div>
       </div>
     </section>
 
@@ -112,7 +114,8 @@
       <div class="cell-head"><span>DEVELOPER TERMINAL</span></div>
       <ul class="dev-list">
         <li><a href="architecture/SYSTEM_ARCHITECTURE.md"><b>API / Architecture</b><small>Specified</small></a></li>
-        <li><a href="specs/IDENTITY_AND_MEMBERSHIP.md"><b>Schemas</b><small>Specified</small></a></li>
+        <li><a href="specs/IDENTITY_AND_MEMBERSHIP.md"><b>Identity Schemas</b><small>Specified</small></a></li>
+        <li><a href="specs/ENTERPRISE_AND_OWNERSHIP.md"><b>Enterprise Relationships</b><small>Specified</small></a></li>
         <li><span><b>SDK</b><small>Queued</small></span></li>
         <li><a href="https://github.com/Geo222222/the-martians-protocol"><b>GitHub</b><small>Public</small></a></li>
         <li><span><b>Testnet</b><small>Pending</small></span></li>
@@ -126,12 +129,10 @@
       <img src="assets/brand/martians-mark.svg" alt="">
       <div>
         <strong>THE MARTIANS PROTOCOL</strong>
-        <p>Objective: durable multi-generational wealth.<br>Secondary objective: get filthy rich.</p>
+        <p>Record relationships without replacing the law.<br>Preserve stewardship without erasing ownership.</p>
       </div>
     </div>
-    <div class="social">
-      <a href="https://github.com/Geo222222/the-martians-protocol" aria-label="GitHub">GitHub</a>
-    </div>
+    <div class="social"><a href="https://github.com/Geo222222/the-martians-protocol" aria-label="GitHub">GitHub</a></div>
     <div class="thumbs">
       <img src="assets/brand/martians-mark.svg" alt="Protocol mark">
       <img src="assets/brand/wolf-portrait.png" alt="Wolf mark">
@@ -147,11 +148,8 @@
       <button class="close" aria-label="Close">×</button>
       <small>GENESIS TERMINAL</small>
       <h2>PROTOCOL ACCESS</h2>
-      <p>The public terminal currently exposes specification state only. Executable protocol capabilities will activate as they pass Alpha certification.</p>
-      <div class="modal-actions">
-        <a href="#protocol">EXPLORE SPECIFICATION</a>
-        <a href="docs/ROADMAP.md">VIEW 6-DAY BUILD</a>
-      </div>
+      <p>The public terminal currently exposes specification state and public-safe Genesis reference relationships only. Executable protocol capabilities will activate as they pass Alpha certification.</p>
+      <div class="modal-actions"><a href="#protocol">EXPLORE SPECIFICATION</a><a href="docs/ROADMAP.md">VIEW ROADMAP</a></div>
     </div>
   </div>
   <div id="introModal" class="modal" aria-hidden="true">
@@ -162,6 +160,6 @@
       <p>The cinematic intro is specified for later Alpha drops. This still is the frontier record, not a live playback feed.</p>
     </div>
   </div>
-  <script src="app.js"></script>
+  <script src="app.js?v=20260819-enterprise2"></script>
 </body>
 </html>
